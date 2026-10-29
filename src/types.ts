@@ -1,4 +1,4 @@
-export type TabName = 'explore' | 'fav' | 'queue';
+export type TabName = 'explore' | 'search' | 'library' | 'fav' | 'queue' | 'playlist';
 export type RepeatMode = 'off' | 'all' | 'one';
 
 export interface Track {
@@ -8,4 +8,6 @@ export interface Track {
   art: string;
   artBig: string;
   duration: number;
+  provider?: 'audius' | 'jamendo';
+  audioUrl?: string;
 }
